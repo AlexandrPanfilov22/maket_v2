@@ -1,0 +1,647 @@
+$white: #FFFFFF;
+$black: #000000;
+$dark: #323232;
+$gray: #999999;
+$blue: #4985FF;
+$light-gray: #F6F6F8;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.color-white {
+  color: $white;
+}
+
+.color-black {
+  color: $black;
+}
+
+.dark {
+  color: $dark;
+}
+
+.color-gray {
+  color: $gray;
+}
+
+.background-gray {
+  background-color: $light-gray;
+}
+
+.navbar {
+  justify-content: end;
+  padding-bottom: 0;
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      padding-top: 40px;
+      padding-bottom: 39px;
+      padding-left: 40px;
+
+      text-align: end;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: $white;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        color: $white;
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    color: $white;
+    border-color: $white;
+    background-color: $white;
+  }
+}
+
+.container {
+  max-width: 1110px;
+}
+
+.main-section {
+  min-height: 900px;
+  background: url("../img/main_background.png") no-repeat;
+  background-size: cover;
+}
+
+.line {
+  margin: 0;
+  opacity: 0.5;
+  border: 1px solid #A1A1A1;
+}
+
+.main-description {
+  margin-top: 220px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  color: $white;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  font-weight: 800;
+  font-size: 48px;
+
+  color: $white;
+}
+
+.primary-button {
+  display: block;
+  min-width: 200px;
+  padding: 14px 36px;
+
+  background: $blue;
+  box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  border: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+
+  color: $white;
+}
+
+.mobile-app-container {
+  padding-top: 110px;
+  padding-bottom: 105px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: $gray;
+}
+
+.description-small {
+  @extend .description;
+  font-size: 14px;
+}
+
+.mobile-card {
+  margin-bottom: 55px;
+
+  .title {
+    display: inline-block;
+    margin: 35px 0 15px 17px;
+    font-weight: 600;
+    font-size: 18px;
+    color: $black;
+  }
+
+  .description {
+    padding-right: 40px;
+    text-align: center;
+  }
+
+  .image {
+    width: 40px;
+    height: 40px;
+    background: url("../icons/chertej.png");
+  }
+}
+
+.mobile-card-main-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 110px;
+  height: 110px;
+  padding: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+}
+
+.mobile-card-child-circle {
+  padding: 25px;
+
+  width: 90px;
+  height: 90px;
+  border: 1px solid $blue;
+  border-radius: 50%;
+}
+
+.development-standards-container {
+  padding: 80px 0 70px 0;
+}
+
+.development-standards-title {
+  margin-top: 72px;
+  margin-bottom: 40px;
+}
+
+.development-standards-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: $blue;
+}
+
+.project-card-icon {
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+  background: url("../icons/web-programming.png");
+}
+
+.project-card-title {
+  display: inline-block;
+  margin-left: 20px;
+
+  font-weight: 400;
+  font-size: 36px;
+  color: $black;
+}
+
+.services-section {
+  //margin-bottom: 490px;
+  padding-top: 100px;
+  padding-bottom: 85px;
+  background: linear-gradient(180deg, #504DC2 50%, $white 50%);
+}
+
+.services-card {
+  .title {
+    margin-bottom: 30px;
+
+    font-weight: 600;
+    font-size: 18px;
+    color: $black;
+  }
+
+  .card-description {
+    margin-bottom: 30px;
+  }
+
+  .link {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration-line: underline;
+    color: $blue;
+  }
+}
+
+.ours-projects-container {
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.about-us-section {
+  margin-bottom: 250px;
+  max-height: 570px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
+  url("../img/video_about_job_bcg.png") no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.about-us-container {
+  padding-top: 70px;
+  padding-bottom: 85px;
+}
+
+.about-us-img-video {
+  text-align: center;
+
+  margin: 70px 0 85px 70px;
+  padding: 165px 335px;
+  background: url("../img/big_city.png") no-repeat;
+  z-index: 2;
+}
+
+.about-us-video-btn {
+  text-align: center;
+
+  width: 300px;
+  height: 100px;
+
+  border: 1px solid $white;
+  border-radius: 200px;
+}
+
+.about-us-video-launch {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 20px 20px 20px 40px;
+
+  background: $blue;
+  border-radius: 50%;
+}
+
+.about-us-video-text {
+  display: inline-block;
+
+  font-weight: 500;
+  font-size: 16px;
+
+  color: $white;
+}
+
+.feedback-container {
+  padding-bottom: 85px;
+}
+
+.feedback-title {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: $black;
+}
+
+.feedback-input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.feedback-input {
+  display: inline-block;
+  width: 300px;
+  padding: 11px 0 11px 33px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: $gray;
+
+  background: $white;
+  border: 1px solid #F2F2F2;
+  box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px 0 0 30px;
+}
+
+.feedback-input-button {
+  display: inline-block;
+  width: 190px;
+  padding: 11px 36px 11px 26px;
+  border: none;
+
+  background: $blue;
+  box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+  border-radius: 0 30px 30px 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  color: $white;
+}
+
+.feedback-warning {
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: $gray;
+}
+
+.footer-container {
+  padding-top: 70px;
+}
+
+.footer-container ul {
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+.footer-title {
+  margin-bottom: 35px;
+
+  font-weight: 600;
+  font-size: 18px;
+  color: $black;
+}
+
+.footer-msg {
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  color: $gray;
+
+  a {
+    color: $gray;
+    text-decoration: none;
+    padding-bottom: 5px;
+
+    &:before {
+      margin-right: 15px;
+      content: url("../icons/footer_msg.png");
+    }
+  }
+}
+
+.footer-call {
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  color: $gray;
+
+  a {
+    color: $gray;
+    text-decoration: none;
+
+    &:before {
+      margin-right: 15px;
+      content: url("../icons/footer_call.png");
+    }
+  }
+}
+
+.footer-place {
+  font-weight: 400;
+  font-size: 14px;
+  color: $gray;
+
+  a {
+    color: $gray;
+    text-decoration: none;
+
+    &:before {
+      margin-right: 15px;
+      content: url("../icons/footer_placeholder.png");
+    }
+  }
+}
+
+.footer-item {
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  color: $gray;
+
+  a {
+    display: block;
+    color: $gray;
+    text-decoration: none;
+
+    &:before {
+      margin-right: 10px;
+      content: url("../icons/footer_right-arrow.png");
+    }
+  }
+}
+
+.footer-last-string {
+  padding-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: $gray;
+}
+
+@media screen and (min-width: 360px) and (max-width: 576px) {
+  .main-section {
+    padding-bottom: 40px;
+    min-height: 480px;
+  }
+
+  .navbar-light {
+    .navbar-nav{
+      .nav-link {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 40px;
+      }
+    }
+  }
+
+  .main-description {
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+
+  .mobile-app-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .development-standards-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .development-standards-title {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .development-standards-link {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .development-standards-descriprion {
+    text-align: center;
+  }
+
+  .development-standards-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .development-standards-container img {
+    width: 300px;
+  }
+
+  .project-card-title {
+    display: block;
+    margin: 0;
+  }
+
+  .services-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .services-title {
+    margin-bottom: 20px;
+
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .services-card {
+    text-align: center;
+
+    img {
+      width: 300px;
+    }
+
+    .adpative-card {
+      .title {
+        color: $white;
+      }
+
+      .card-description {
+        color: $white;
+      }
+    }
+  }
+
+  .link {
+    margin-bottom: 50px;
+  }
+
+  .ours-projects-image-item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .ours-projects-section {
+    //margin-top: 1500px;
+  }
+
+  .ours-projects-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .about-us-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .feedback-input-container {
+    display: block;
+  }
+
+  .feedback-input {
+    display: block;
+    width: 70%;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .feedback-input-button {
+    display: block;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+
+  .about-us-img-video {
+    width: 340px;
+    margin: auto;
+    padding: 40px;
+    background-size: 100%;
+  }
+
+  .about-us-section {
+    margin-bottom: 0;
+    background-size: 100% 250px;
+  }
+
+  .about-us-video-btn {
+    border: none;
+  }
+
+  .feedback-container {
+    padding-bottom: 40px;
+  }
+
+  .footer-container {
+    padding-top: 40px;
+  }
+
+  .footer-title {
+    margin-bottom: 30px;
+  }
+
+  .footer-item {
+    margin-bottom: 20px;
+  }
+
+  .footer-msg {
+    margin-bottom: 20px;
+  }
+
+  .footer-call {
+    margin-bottom: 20px;
+  }
+
+  .footer-place {
+    margin-bottom: 20px;
+  }
+}
